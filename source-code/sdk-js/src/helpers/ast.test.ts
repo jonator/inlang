@@ -65,7 +65,7 @@ describe("getFunctionOrDeclarationValue", () => {
 	})
 	test("declaration value", () => {
 		const code = dedent`
-            const loadFn = function() {
+            const loadFn = () => {
                 console.log("load")
             }
             export const load = loadFn
